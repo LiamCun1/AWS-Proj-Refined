@@ -45,7 +45,7 @@ def lambda_handler(event, context):
         }
 
         create_table = (
-            '''CREATE TABLE IF TABLE NOT EXISTS s3_data_collection (
+            '''CREATE TABLE IF NOT EXISTS s3_data_collection (
             File_Type VARCHAR(255),
             File_Size INT,
             width INT,
