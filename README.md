@@ -17,8 +17,8 @@ pip install boto3; moto; psycopg2; PIL
 Clone this repository
 
 ```bash
-git clone https://github.com/LiamCun1/AWS-Proj.git
-cd AWS-Proj
+git clone https://github.com/LiamCun1/AWS-Proj-Refined.git
+cd AWS-Proj-Refined
 ```  
 
 Replace variable holders in config.ini to reflect your own environment.
