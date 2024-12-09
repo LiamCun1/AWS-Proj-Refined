@@ -39,10 +39,10 @@ Replace variable holders in config.ini to reflect your own environment.
 
 ## Overview of Test Case
 
--This test case is using moto and unittest to mock the AWS environment and test the code.
--@mock_aws is creating mock interactions in the AWS environment.
--@patch('psycopg2.connect') is replacing psycopg2.connect with mock_connection.
--mock_conn is going to be the mock connection for the database.
--mock_connection.return_value replaces the psycopg2.connect call with the mock_conn.
--mock_cursor returns a mock cursor in the connection.
--All connections are asserted as called once except for the cursors as they are called on multiple times.
+- This test case is using moto and unittest to mock the AWS environment and test the code. 
+- @mock_aws is creating mock interactions in the AWS environment. 
+- @patch('psycopg2.connect') is replacing psycopg2.connect with mock_connection. 
+- mock_conn is going to be the mock connection for the database. 
+- mock_connection.return_value replaces the psycopg2.connect call with the mock_conn. 
+- mock_cursor returns a mock cursor in the connection. 
+- All connections are asserted as called once except for the cursors as they are called on multiple times. 
